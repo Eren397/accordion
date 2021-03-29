@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Accordion</title>
+    <style type="text/css">
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        .accordion {
+            background-color: #eee;
+            color: #444;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+        }
+        
+        .active {
+            background-color: #ccc;
+        }
+        
+        .panel {
+            padding: 0 18px;
+            background-color: white;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height .6s ease;
+        }
+        
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="container">
+        <h2>Accordion Animado</h2>
+        <button class="accordion">Section 1</button>
+        <div class="panel">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+        </div>
+
+        <button class="accordion">Section 2</button>
+        <div class="panel">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+
+        </div>
+
+        <button class="accordion">Section 3</button>
+        <div class="panel">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit , sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat.</p>
+        </div>
+    </div>
+
+    <script src="main.js">
+        // const btns = document.querySelectorAll('.accordion')
+        // const panels = document.querySelectorAll('.panel')
+
+        // btns.forEach((btn, index) => {
+        //   btn.addEventListener('click', () => {
+        //     initAccordion(index)
+        //   })
+        // })
+
+        // const normalize = {
+        //   normalizeClass: () => {
+        //     btns.forEach(btn => {
+        //       btn.classList.remove('active')
+        //     })
+        //   },
+        //   normalizePanel: () => {
+        //     panels.forEach(panel => {
+        //       panel.style.maxHeight = null
+        //     })
+        //   }
+        // }
+
+        // function initAccordion(index){
+        //   normalize.normalizeClass()
+        //   btns[index].classList.add('active')
+
+        //   if(panels[index].style.maxHeight){
+        //     normalize.normalizeClass()
+        //     panels[index].style.maxHeight = null    
+        //   }else{
+        //     normalize.normalizePanel()
+        //     panels[index].style.maxHeight = panels[index].scrollHeight + 'px'
+
+        //   }
+
+        // }
+    </script>
+</body>
+
+</html>
